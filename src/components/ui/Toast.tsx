@@ -25,9 +25,7 @@ export function ToastProvider({ children }: PropsWithChildren) {
   const [toasts, setToasts] = useState<ToastItem[]>([]);
 
   const cerrar = useCallback((id: string) => {
-    // Marcar como saliendo para la animación
     setToasts((previos) => previos.map((toast) => (toast.id === id ? { ...toast, saliendo: true } : toast)));
-    // Eliminar después de la animación
     setTimeout(() => {
       setToasts((previos) => previos.filter((toast) => toast.id !== id));
     }, 300);

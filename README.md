@@ -143,7 +143,6 @@ Todos los componentes UI (Button, Input, Card, Modal, Toast) están construidos 
 - Bundle size reducido
 - No hay dependencias con breaking changes
 - Customización sin limitaciones
-- Demuestra habilidades de implementación
 
 #### 5. **Performance Optimizations**
 
@@ -266,10 +265,9 @@ code-challenge/
 animation-delay: calc(index * 60ms)
 ```
 
-- **Cards**: Fade-up con stagger (60ms entre cada una)
+- **Cards**: Fade-up con stagger
 - **Modal**: Zoom-in + fade-in
 - **Toast**: Slide-in desde derecha
-- **Expand/collapse**: Transiciones suaves de 700ms con cubic-bezier
 
 ### Accesibilidad
 
